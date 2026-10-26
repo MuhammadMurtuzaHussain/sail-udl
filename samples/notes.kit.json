@@ -1,0 +1,379 @@
+{
+  "model": "gemma4:e4b",
+  "points": [
+    {
+      "id": 0,
+      "text": "Caches save copies of responses so that subsequent requests for the same resource don't need to contact the original server.",
+      "quote": "A cache stores a copy of a response so that later requests for the same resource can be answered without contacting the origin server.",
+      "segIds": [
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "text": "The Cache-Control header dictates how caches should operate.",
+      "quote": "The Cache-Control response header tells caches how to behave.",
+      "segIds": [
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The max-age directive specifies the duration, in seconds, that a response remains considered fresh.",
+      "quote": "The max-age directive sets how many seconds a response stays fresh.",
+      "segIds": [
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The ETag header provides a unique identifier for a particular version of a resource.",
+      "quote": "The ETag header carries an identifier for a specific version of a resource.",
+      "segIds": [
+        7
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The no-store directive mandates that a response cannot be saved in any cache.",
+      "quote": "The no-store directive means a response must not be kept in any cache.",
+      "segIds": [
+        10
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The private directive restricts a response to being stored only in the individual user's browser cache.",
+      "quote": "The private directive limits a response to the user's own browser cache.",
+      "segIds": [
+        15
+      ]
+    }
+  ],
+  "map": {
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Cache stores response copy",
+        "quote": "A cache stores a copy of a response so that later requests for the same resource can be answered without contacting the origin server.",
+        "segIds": [
+          1
+        ]
+      },
+      {
+        "id": "n2",
+        "label": "Cache-Control header dictates behavior",
+        "quote": "The Cache-Control response header tells caches how to behave.",
+        "segIds": [
+          2
+        ]
+      },
+      {
+        "id": "n3",
+        "label": "max-age sets freshness",
+        "quote": "The max-age directive sets how many seconds a response stays fresh.",
+        "segIds": [
+          3
+        ]
+      },
+      {
+        "id": "n4",
+        "label": "Stale response requires revalidation",
+        "quote": "Once it is stale, the cache must revalidate it before reuse.",
+        "segIds": [
+          5
+        ]
+      },
+      {
+        "id": "n5",
+        "label": "ETag identifies resource version",
+        "quote": "The ETag header carries an identifier for a specific version of a resource.",
+        "segIds": [
+          7
+        ]
+      },
+      {
+        "id": "n6",
+        "label": "no-store prevents caching",
+        "quote": "The no-store directive means a response must not be kept in any cache.",
+        "segIds": [
+          10
+        ]
+      },
+      {
+        "id": "n7",
+        "label": "private limits cache scope",
+        "quote": "The private directive limits a response to the user's own browser cache.",
+        "segIds": [
+          15
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2",
+        "label": "is managed by",
+        "quote": "A cache stores a copy of a response so that later requests for the same resource can be answered without contacting the origin server.",
+        "segIds": [
+          1
+        ]
+      },
+      {
+        "from": "n2",
+        "to": "n3",
+        "label": "specifies",
+        "quote": "The max-age directive sets how many seconds a response stays fresh.",
+        "segIds": [
+          3
+        ]
+      },
+      {
+        "from": "n3",
+        "to": "n4",
+        "label": "leads to",
+        "quote": "Once it is stale, the cache must revalidate it before reuse.",
+        "segIds": [
+          5
+        ]
+      },
+      {
+        "from": "n2",
+        "to": "n6",
+        "label": "can mandate",
+        "quote": "The no-store directive means a response must not be kept in any cache.",
+        "segIds": [
+          10
+        ]
+      },
+      {
+        "from": "n2",
+        "to": "n7",
+        "label": "can specify",
+        "quote": "The private directive limits a response to the user's own browser cache.",
+        "segIds": [
+          15
+        ]
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "question": "What is the primary function of a cache in relation to resource requests?",
+      "options": [
+        "To answer later requests using a stored copy without contacting the origin server.",
+        "To carry an identifier for a specific version of a resource.",
+        "To tell caches how to behave regarding responses.",
+        "To limit a response to a user's own browser cache."
+      ],
+      "answer": 0,
+      "explanation": "The source states that a cache stores a copy of a response so that later requests for the same resource can be answered without contacting the origin server.",
+      "quote": "A cache stores a copy of a response so that later requests for the same resource can be answered without contacting the origin server.",
+      "segIds": [
+        1
+      ]
+    },
+    {
+      "question": "What action must a cache take when a response becomes stale?",
+      "options": [
+        "It must send a status 304 Not Modified response.",
+        "It must discard the response entirely.",
+        "It must contact the origin server without using validators.",
+        "It must revalidate the response before it can be reused."
+      ],
+      "answer": 3,
+      "explanation": "The source states that once a response is stale, the cache must revalidate it before reuse.",
+      "quote": "Once it is stale, the cache must revalidate it before reuse.",
+      "segIds": [
+        5
+      ]
+    },
+    {
+      "question": "What does the no-cache directive actually require of a cache?",
+      "options": [
+        "The cache may store the response but must revalidate it with the server before every reuse.",
+        "The response must be limited only to the user's own browser cache.",
+        "The response must not be kept in any cache.",
+        "The response must be answered without contacting the origin server."
+      ],
+      "answer": 0,
+      "explanation": "The source clarifies that the no-cache directive means the cache may store the response but must revalidate it with the server before every reuse.",
+      "quote": "The no-cache directive does not mean \"do not cache\".",
+      "segIds": [
+        12
+      ]
+    },
+    {
+      "question": "What is the benefit of the server replying with status 304 Not Modified when a resource hasn't changed?",
+      "options": [
+        "It ensures the response is kept in any cache.",
+        "It guarantees the resource is a static asset.",
+        "It saves bandwidth by sending no body.",
+        "It forces the cache to revalidate the resource."
+      ],
+      "answer": 2,
+      "explanation": "The source explains that when the resource has not changed, the server replies with status 304 Not Modified and no body, which saves bandwidth.",
+      "quote": "If the resource has not changed, the server replies with status 304 Not Modified and no body, which saves bandwidth.",
+      "segIds": [
+        9
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "title": "Basic Caching for Speed",
+      "scenario": "Imagine you frequently visit a news website and want the pages to load instantly.",
+      "steps": [
+        "The first time you visit, the website sends the page content to your browser cache.",
+        "On subsequent visits, your browser checks its cache and serves the stored copy immediately."
+      ],
+      "quote": "A cache stores a copy of a response so that later requests for the same resource can be answered without contacting the origin server.",
+      "segIds": [
+        1
+      ]
+    },
+    {
+      "title": "Protecting Sensitive Information",
+      "scenario": "You are viewing your bank account balance online and do not want any intermediary system to save this data.",
+      "steps": [
+        "The server sends the account page with the no-store directive.",
+        "Any cache, including shared ones, is instructed not to save this response."
+      ],
+      "quote": "The no-store directive means a response must not be kept in any cache.",
+      "segIds": [
+        10
+      ]
+    },
+    {
+      "title": "Forcing Revalidation",
+      "scenario": "You are viewing a product page where the price changes frequently, so you need the latest information.",
+      "steps": [
+        "The server sends the product page with the no-cache directive.",
+        "Your browser is allowed to store the page, but it must check with the server before showing it again."
+      ],
+      "quote": "The no-cache directive does not mean \"do not cache\".",
+      "segIds": [
+        12
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "speaker": "Ana",
+      "text": "Basically, a cache keeps a copy of a response so it doesn't have to bother the origin server for the same thing again.",
+      "quote": "A cache stores a copy of a response so that later requests for the same resource can be answered without contacting the origin server.",
+      "segIds": [
+        1
+      ]
+    },
+    {
+      "speaker": "Ben",
+      "text": "The Cache-Control header is what tells caches exactly how they should act.",
+      "quote": "The Cache-Control response header tells caches how to behave.",
+      "segIds": [
+        2
+      ]
+    },
+    {
+      "speaker": "Ana",
+      "text": "The max-age directive specifies how long a response is considered fresh.",
+      "quote": "The max-age directive sets how many seconds a response stays fresh.",
+      "segIds": [
+        3
+      ]
+    },
+    {
+      "speaker": "Ana",
+      "text": "To check for changes, the ETag header holds an ID for a specific version of the resource.",
+      "quote": "The ETag header carries an identifier for a specific version of a resource.",
+      "segIds": [
+        7
+      ]
+    },
+    {
+      "speaker": "Ben",
+      "text": "If nothing has changed, the server sends back a 304 status with no body, which saves bandwidth.",
+      "quote": "If the resource has not changed, the server replies with status 304 Not Modified and no body, which saves bandwidth.",
+      "segIds": [
+        9
+      ]
+    },
+    {
+      "speaker": "Ana",
+      "text": "The no-store directive is strict: it means a response absolutely cannot be kept in any cache.",
+      "quote": "The no-store directive means a response must not be kept in any cache.",
+      "segIds": [
+        10
+      ]
+    },
+    {
+      "speaker": "Ben",
+      "text": "It's important to know that the no-cache directive doesn't actually mean 'do not cache'.",
+      "quote": "The no-cache directive does not mean \"do not cache\".",
+      "segIds": [
+        12
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Caching Flowchart",
+      "brief": "Create a simple diagram illustrating the process of a cache answering a request without hitting the origin server.",
+      "quote": "A cache stores a copy of a response so that later requests for the same resource can be answered without contacting the origin server.",
+      "segIds": [
+        1
+      ]
+    },
+    {
+      "title": "ETag Simulation",
+      "brief": "Write a short script or scenario demonstrating how a client uses an ETag in an If-None-Match header to check for resource changes.",
+      "quote": "The ETag header carries an identifier for a specific version of a resource.",
+      "segIds": [
+        7
+      ]
+    },
+    {
+      "title": "No-Cache Misconception Poster",
+      "brief": "Design a poster that clarifies the difference between 'no-store' and 'no-cache' directives, explaining when revalidation is required.",
+      "quote": "The no-cache directive does not mean \"do not cache\".",
+      "segIds": [
+        12
+      ]
+    }
+  ],
+  "held": [
+    {
+      "section": "map",
+      "reason": "quote-not-found",
+      "item": "Revalidation uses validators"
+    },
+    {
+      "section": "map",
+      "reason": "dangling-edge",
+      "item": "Stale response requires revalidation -is achieved by-> Revalidation uses validators"
+    },
+    {
+      "section": "map",
+      "reason": "dangling-edge",
+      "item": "Revalidation uses validators -is an example of-> ETag identifies resource version"
+    },
+    {
+      "section": "quiz",
+      "reason": "unsupported-claim",
+      "item": "What does the max-age directive control in a response?"
+    },
+    {
+      "section": "audio",
+      "reason": "unsupported-claim",
+      "item": "When that freshness time runs out, the cache has to check with the server before using it again."
+    }
+  ],
+  "proposed": {
+    "points": 6,
+    "map": 15,
+    "quiz": 5,
+    "examples": 3,
+    "audio": 8,
+    "projects": 3
+  }
+}

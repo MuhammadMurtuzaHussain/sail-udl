@@ -1,0 +1,11 @@
+HTTP caching - revision notes
+
+- A cache stores a copy of a response so that later requests for the same resource can be answered without contacting the origin server.
+- The Cache-Control response header tells caches how to behave. The max-age directive sets how many seconds a response stays fresh.
+- A fresh response can be reused without asking the server. Once it is stale, the cache must revalidate it before reuse.
+- Revalidation uses validators. The ETag header carries an identifier for a specific version of a resource. The client sends it back in an If-None-Match header.
+- If the resource has not changed, the server replies with status 304 Not Modified and no body, which saves bandwidth.
+- The no-store directive means a response must not be kept in any cache. It is used for sensitive data such as account pages.
+- The no-cache directive does not mean "do not cache". It means the cache may store the response but must revalidate it with the server before every reuse.
+- Shared caches such as CDNs sit between many users and the origin. The private directive limits a response to the user's own browser cache.
+- A common pattern for static assets is to put a content hash in the file name and send a very long max-age, so a changed file gets a new URL and old copies never need invalidating.

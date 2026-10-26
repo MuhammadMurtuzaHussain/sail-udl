@@ -1,0 +1,428 @@
+{
+  "model": "gemma4:e4b",
+  "points": [
+    {
+      "id": 0,
+      "text": "Spaced practice suggests breaking up study time into shorter sessions spread out over several days.",
+      "quote": "Instead of one long session, you split your study into shorter sessions spread over days.",
+      "segIds": [
+        13
+      ]
+    },
+    {
+      "id": 1,
+      "text": "The slight difficulty caused by forgetting between study sessions is what helps build long-lasting memory.",
+      "quote": "A little forgetting between sessions makes the next recall harder, and that effort is what builds durable memory.",
+      "segIds": [
+        15
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Interleaving involves mixing various types of problems during a single study session rather than practicing just one type repeatedly.",
+      "quote": "Interleaving means mixing different kinds of problems within one session instead of practising one kind repeatedly.",
+      "segIds": [
+        26
+      ]
+    },
+    {
+      "id": 3,
+      "text": "These four study techniques can feel more challenging during studying, but this difficulty is beneficial because it actively engages your memory.",
+      "quote": "All four make studying feel harder in the moment, and that difficulty is useful because it forces your memory to work.",
+      "segIds": [
+        40
+      ]
+    }
+  ],
+  "map": {
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Retrieval practice",
+        "quote": "The first technique I want you to know is retrieval practice.",
+        "segIds": [
+          5
+        ]
+      },
+      {
+        "id": "n2",
+        "label": "Recall what you studied",
+        "quote": "Retrieval practice means closing the book and trying to recall what you just studied.",
+        "segIds": [
+          6
+        ]
+      },
+      {
+        "id": "n3",
+        "label": "Spaced practice",
+        "quote": "The second technique is spaced practice.",
+        "segIds": [
+          12
+        ]
+      },
+      {
+        "id": "n4",
+        "label": "Split study sessions",
+        "quote": "Instead of one long session, you split your study into shorter sessions spread over days.",
+        "segIds": [
+          13
+        ]
+      },
+      {
+        "id": "n5",
+        "label": "Interleaving",
+        "quote": "The third technique is interleaving.",
+        "segIds": [
+          25
+        ]
+      },
+      {
+        "id": "n6",
+        "label": "Mixing problem types",
+        "quote": "Interleaving means mixing different kinds of problems within one session instead of practising one kind repeatedly.",
+        "segIds": [
+          26
+        ]
+      },
+      {
+        "id": "n7",
+        "label": "Elaboration",
+        "quote": "The fourth technique is elaboration.",
+        "segIds": [
+          34
+        ]
+      },
+      {
+        "id": "n8",
+        "label": "Explain in own words",
+        "quote": "Elaboration means explaining an idea in your own words and connecting it to something you already know.",
+        "segIds": [
+          35
+        ]
+      },
+      {
+        "id": "n9",
+        "label": "Difficulty forces memory",
+        "quote": "All four make studying feel harder in the moment, and that difficulty is useful because it forces your memory to work.",
+        "segIds": [
+          40
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "n2",
+        "to": "n1",
+        "label": "is part of",
+        "quote": "Every successful recall strengthens the memory, and every failed attempt shows you exactly what to revisit.",
+        "segIds": [
+          7
+        ]
+      },
+      {
+        "from": "n3",
+        "to": "n4",
+        "label": "follows schedule like",
+        "quote": "A simple schedule is to review on day one, again on day three, and again on day seven.",
+        "segIds": [
+          14
+        ]
+      },
+      {
+        "from": "n6",
+        "to": "n5",
+        "label": "is defined as",
+        "quote": "Interleaving means mixing different kinds of problems within one session instead of practising one kind repeatedly.",
+        "segIds": [
+          26
+        ]
+      },
+      {
+        "from": "n8",
+        "to": "n7",
+        "label": "is described as",
+        "quote": "Elaboration means explaining an idea in your own words and connecting it to something you already know.",
+        "segIds": [
+          35
+        ]
+      },
+      {
+        "from": "n1",
+        "to": "n9",
+        "label": "contributes to",
+        "quote": "To sum up, the four techniques are retrieval practice, spaced practice, interleaving and elaboration.",
+        "segIds": [
+          39
+        ]
+      },
+      {
+        "from": "n9",
+        "to": "n1",
+        "label": "is supported by",
+        "quote": "All four make studying feel harder in the moment, and that difficulty is useful because it forces your memory to work.",
+        "segIds": [
+          40
+        ]
+      },
+      {
+        "from": "n9",
+        "to": "n3",
+        "label": "is supported by",
+        "quote": "All four make studying feel harder in the moment, and that difficulty is useful because it forces your memory to work.",
+        "segIds": [
+          40
+        ]
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "question": "What is the core action of retrieval practice?",
+      "options": [
+        "Attempting to recall studied material without reference",
+        "Reading notes repeatedly to ensure familiarity",
+        "Mixing different types of problems during a study session",
+        "Writing down everything remembered and comparing it to notes"
+      ],
+      "answer": 0,
+      "explanation": "The source defines retrieval practice as closing the book and trying to recall what was studied.",
+      "quote": "Retrieval practice means closing the book and trying to recall what you just studied.",
+      "segIds": [
+        6
+      ]
+    },
+    {
+      "question": "What is the main principle behind spaced practice?",
+      "options": [
+        "Explaining concepts aloud to a friend",
+        "Focusing on one type of problem repeatedly",
+        "Distributing study time across multiple days",
+        "Ensuring the material looks familiar before an exam"
+      ],
+      "answer": 2,
+      "explanation": "Spaced practice involves splitting study into shorter sessions spread over days, rather than one long session.",
+      "quote": "Instead of one long session, you split your study into shorter sessions spread over days.",
+      "segIds": [
+        13
+      ]
+    },
+    {
+      "question": "How does interleaving differ from blocked practice?",
+      "options": [
+        "It involves closing the book to test memory recall",
+        "It focuses on explaining ideas in your own words",
+        "It requires reviewing material on day one, day three, and day seven",
+        "It involves mixing various problem types in a single session"
+      ],
+      "answer": 3,
+      "explanation": "Interleaving is defined as mixing different kinds of problems within one session instead of practicing one kind repeatedly.",
+      "quote": "Interleaving means mixing different kinds of problems within one session instead of practising one kind repeatedly.",
+      "segIds": [
+        26
+      ]
+    },
+    {
+      "question": "What is the goal of the elaboration technique?",
+      "options": [
+        "To ensure the material looks familiar before an exam",
+        "To alternate between different problem sets in one session",
+        "To connect new ideas with existing knowledge and explain them personally",
+        "To practice recalling information by closing the book"
+      ],
+      "answer": 2,
+      "explanation": "Elaboration is defined as explaining an idea in your own words and connecting it to something you already know.",
+      "quote": "Elaboration means explaining an idea in your own words and connecting it to something you already know.",
+      "segIds": [
+        35
+      ]
+    },
+    {
+      "question": "What is the benefit of the difficulty associated with these four study techniques?",
+      "options": [
+        "It guarantees that the student will not need to revisit the material",
+        "It allows for the knowledge to fade quickly after the exam",
+        "The momentary difficulty compels the memory to engage and function",
+        "It ensures the material looks familiar before an exam"
+      ],
+      "answer": 2,
+      "explanation": "The source states that the difficulty from these techniques is useful because it forces your memory to work.",
+      "quote": "All four make studying feel harder in the moment, and that difficulty is useful because it forces your memory to work.",
+      "segIds": [
+        40
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "title": "Using Retrieval Practice",
+      "scenario": "You just finished reading a chapter on a new historical event.",
+      "steps": [
+        "Close the textbook.",
+        "Try to write down everything you remember about the event.",
+        "Check your notes to see what you missed."
+      ],
+      "quote": "Retrieval practice means closing the book and trying to recall what you just studied.",
+      "segIds": [
+        6
+      ]
+    },
+    {
+      "title": "Applying Spaced Practice",
+      "scenario": "You have a large amount of material to study before a major test.",
+      "steps": [
+        "Study a portion of the material today.",
+        "Review that portion again a few days later.",
+        "Review it a week after that to reinforce the memory."
+      ],
+      "quote": "Instead of one long session, you split your study into shorter sessions spread over days.",
+      "segIds": [
+        13
+      ]
+    },
+    {
+      "title": "Using Interleaving for Practice",
+      "scenario": "You are practicing different types of math problems for an upcoming quiz.",
+      "steps": [
+        "Do a problem of type A.",
+        "Follow it with a problem of type B.",
+        "Then mix in a problem of type C."
+      ],
+      "quote": "Interleaving means mixing different kinds of problems within one session instead of practising one kind repeatedly.",
+      "segIds": [
+        26
+      ]
+    },
+    {
+      "title": "Applying Elaboration",
+      "scenario": "You are learning a complex concept in your science class.",
+      "steps": [
+        "Explain the concept out loud as if you were teaching a friend.",
+        "Try to link this new idea to something you already understand."
+      ],
+      "quote": "Elaboration means explaining an idea in your own words and connecting it to something you already know.",
+      "segIds": [
+        35
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "speaker": "Ana",
+      "text": "The session today is focused on understanding why certain study habits are effective while others just seem to work.",
+      "quote": "Today's session is about why some study habits work and others only feel like they work.",
+      "segIds": [
+        1
+      ]
+    },
+    {
+      "speaker": "Ben",
+      "text": "It's important to remember that just feeling familiar with material isn't the same as actually being able to recall it.",
+      "quote": "Familiarity is not the same as being able to recall it.",
+      "segIds": [
+        4
+      ]
+    },
+    {
+      "speaker": "Ana",
+      "text": "One technique is retrieval practice, which involves closing your book and actively trying to remember what you just learned.",
+      "quote": "Retrieval practice means closing the book and trying to recall what you just studied.",
+      "segIds": [
+        6
+      ]
+    },
+    {
+      "speaker": "Ben",
+      "text": "The second technique, spaced practice, suggests breaking up your study into shorter sessions spread out over several days.",
+      "quote": "Instead of one long session, you split your study into shorter sessions spread over days.",
+      "segIds": [
+        13
+      ]
+    },
+    {
+      "speaker": "Ana",
+      "text": "For example, a simple schedule for this is reviewing on day one, then again on day three, and finally on day seven.",
+      "quote": "A simple schedule is to review on day one, again on day three, and again on day seven.",
+      "segIds": [
+        14
+      ]
+    },
+    {
+      "speaker": "Ben",
+      "text": "Next up is interleaving, which means mixing various types of problems during a single study session instead of doing one type over and over.",
+      "quote": "Interleaving means mixing different kinds of problems within one session instead of practising one kind repeatedly.",
+      "segIds": [
+        26
+      ]
+    },
+    {
+      "speaker": "Ana",
+      "text": "The fourth technique, elaboration, involves explaining a concept using your own words and linking it to prior knowledge.",
+      "quote": "Elaboration means explaining an idea in your own words and connecting it to something you already know.",
+      "segIds": [
+        35
+      ]
+    },
+    {
+      "speaker": "Ben",
+      "text": "To sum up, all four of these methods might feel tougher while you're studying, but that difficulty is actually helpful because it makes your memory work harder.",
+      "quote": "All four make studying feel harder in the moment, and that difficulty is useful because it forces your memory to work.",
+      "segIds": [
+        40
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Recall Challenge",
+      "brief": "Choose a topic from your course material and practice retrieval by closing your notes and writing down everything you remember about it.",
+      "quote": "Retrieval practice means closing the book and trying to recall what you just studied.",
+      "segIds": [
+        6
+      ]
+    },
+    {
+      "title": "Spaced Study Plan",
+      "brief": "Create a study schedule for a specific topic, ensuring you review it in shorter sessions spread out over several days, like day one, day three, and day seven.",
+      "quote": "Instead of one long session, you split your study into shorter sessions spread over days.",
+      "segIds": [
+        13
+      ]
+    },
+    {
+      "title": "Mixed Practice Set",
+      "brief": "If you are learning different types of problems, create a practice set that mixes those types together rather than doing all of one type consecutively.",
+      "quote": "Interleaving means mixing different kinds of problems within one session instead of practising one kind repeatedly.",
+      "segIds": [
+        26
+      ]
+    },
+    {
+      "title": "Explain-Back Summary",
+      "brief": "Select a complex idea from your course and explain it aloud as if you were teaching a friend, noting any points where you get stuck.",
+      "quote": "Elaboration means explaining an idea in your own words and connecting it to something you already know.",
+      "segIds": [
+        35
+      ]
+    }
+  ],
+  "held": [
+    {
+      "section": "points",
+      "reason": "unsupported-claim",
+      "item": "Retrieval practice involves testing yourself by trying to remember information without looking at your notes."
+    },
+    {
+      "section": "points",
+      "reason": "unsupported-claim",
+      "item": "Elaboration is the process of explaining a concept in your own language and linking it to existing knowledge."
+    }
+  ],
+  "proposed": {
+    "points": 6,
+    "map": 16,
+    "quiz": 5,
+    "examples": 4,
+    "audio": 8,
+    "projects": 4
+  }
+}

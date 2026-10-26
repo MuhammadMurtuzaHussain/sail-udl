@@ -1,0 +1,84 @@
+{
+  "model": "gemma4:e4b",
+  "runsPerSample": 3,
+  "generatedAt": "2026-10-26T16:21:40.691Z",
+  "secondsPerKit": {
+    "lecture": 282,
+    "notes": 186
+  },
+  "modelItems": {
+    "proposed": 252,
+    "kept": 231,
+    "held": 21,
+    "quoteMissing": 3,
+    "keepRate": 0.917,
+    "reasons": {
+      "unsupported-claim": 11,
+      "duplicate": 1,
+      "quote-not-found": 3,
+      "dangling-edge": 6
+    }
+  },
+  "bySection": {
+    "points": {
+      "proposed": 36,
+      "kept": 32
+    },
+    "map": {
+      "proposed": 96,
+      "kept": 86
+    },
+    "quiz": {
+      "proposed": 30,
+      "kept": 25
+    },
+    "examples": {
+      "proposed": 21,
+      "kept": 21
+    },
+    "audio": {
+      "proposed": 48,
+      "kept": 46
+    },
+    "projects": {
+      "proposed": 21,
+      "kept": 21
+    }
+  },
+  "validatorAdversarial": {
+    "quote swapped for a real quote from the other sample": {
+      "n": 32,
+      "rejected": 32
+    },
+    "one word in the quote changed": {
+      "n": 32,
+      "rejected": 32
+    },
+    "invented number added to the claim": {
+      "n": 32,
+      "rejected": 32
+    },
+    "claim replaced by an unrelated claim from the other sample": {
+      "n": 32,
+      "rejected": 32
+    }
+  },
+  "explainBackSanity": {
+    "keyIdeasInKit": 4,
+    "full answer": {
+      "gemma": 0.75,
+      "lexical": 1,
+      "rejected": 0
+    },
+    "half answer": {
+      "gemma": 0.25,
+      "lexical": 0.25,
+      "rejected": 0
+    },
+    "off-topic answer": {
+      "gemma": 0,
+      "lexical": 0,
+      "rejected": 0
+    }
+  }
+}

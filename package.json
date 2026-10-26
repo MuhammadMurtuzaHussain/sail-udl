@@ -1,0 +1,31 @@
+{
+  "name": "sail-udl",
+  "version": "0.1.0",
+  "description": "SAIL (Supported AI Learning): paste material, get a Universal Design for Learning study kit from a local open-weight Gemma 4, with every claim traced to your source.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c cyan,magenta \"tsx watch src/server/index.ts\" \"vite\"",
+    "start": "vite build && tsx src/server/index.ts",
+    "build": "vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "eval": "tsx eval/run.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^9.0.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.2"
+  }
+}

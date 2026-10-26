@@ -9,6 +9,7 @@
     "dev": "concurrently -k -n api,web -c cyan,magenta \"tsx watch src/server/index.ts\" \"vite\"",
     "start": "vite build && tsx src/server/index.ts",
     "build": "vite build",
+    "deploy:demo": "bash scripts/deploy-demo.sh",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "eval": "tsx eval/run.ts"
